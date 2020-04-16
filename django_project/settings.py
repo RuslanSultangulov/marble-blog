@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get("BLOG_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("BLOG_DEBUG")
+DEBUG = (os.environ.get("BLOG_DEBUG") == "True")
 
 ALLOWED_HOSTS = ['marbleblog.herokuapp.com', '127.0.0.1']
 
